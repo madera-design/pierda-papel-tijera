@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel o Tijeras</title>
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Piedra, Papel o Tijeras</h1>
+    </header>
+    <div class="container__score">
+      <div id="score">
+        <span id="userScore">0</span>
+        -
+        <span id="computerScore">0</span>
+      </div>
+      <h3 class="h3">Marcador</h3>
+    </div>
+    <section class="container">
+      <div>
+        <h3 class="h3">Tu</h3>
+        <div class="container__btn">
+          <button class="btn__primary" id="Piedra">
+            <img
+              class="img__button"
+              src="./src/assets/img/Piedra.png"
+              alt="piedra"
+            />
+          </button>
+          <button class="btn__primary" id="Papel">
+            <img
+              class="img__button"
+              src="./src/assets/img/Papel.png"
+              alt="papel"
+            />
+          </button>
+          <button class="btn__primary" id="Tijera">
+            <img
+              class="img__button"
+              src="./src/assets/img/Tijera.png"
+              alt="tijeras"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="container__result border-right" id="result_user"></div>
+      <div class="container__result" id="result_pc"></div>
+      <div id="cont_won_or_lost" class="container__won none">
+        <div id="won_or_lost" class="won_or_lost--text"></div>
+      </div>
+      <div>
+        <h3 class="h3">Computadora</h3>
+        <div class="container__btn">
+          <img
+            class="img__button"
+            src="./src/assets/img/Piedra.png"
+            alt="piedra"
+          />
+          <img
+            class="img__button"
+            src="./src/assets/img/Papel.png"
+            alt="papel"
+          />
+          <img
+            class="img__button"
+            src="./src/assets/img/Tijera.png"
+            alt="tijeras"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="./src/assets/js/main.js"></script>
+  </body>
+</html>
